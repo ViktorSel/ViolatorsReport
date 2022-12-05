@@ -82,8 +82,8 @@ class ViolatorsReportServiceProvider extends ServiceProvider
          * Uncomment this functin call to make the public assets publishable using the 'public' tag.
          */
          $this->publishes([
-             __DIR__.'/../../resources/export_template' => resource_path('/export_templates'),
-         ], 'export_templates');
+             __DIR__.'/../../resources/export_template' => resource_path('/export_template'),
+         ], 'export_template');
 
         /**
          * Migrations
