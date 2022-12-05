@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Ui\Services\ViolatorsReport;
+namespace Ast\ViolatorsReport\Services;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 
