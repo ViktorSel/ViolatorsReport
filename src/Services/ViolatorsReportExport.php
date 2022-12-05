@@ -59,7 +59,7 @@ class ViolatorsReportExport extends Export
 
     protected function getTemplateFilePath(?string $file = null): string
     {
-        return base_path() . '/vendor/ltd_ast/violators-report/resources/export_templates/' . 'violators_report.xlsx';
+        return base_path() . '/vendor/ltd_ast/violators-report/resources/export_template/' . 'violators_report.xlsx';
     }
 
     public static function getExportDirName()
