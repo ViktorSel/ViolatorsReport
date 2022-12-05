@@ -28,7 +28,8 @@ class ViolatorsReportServiceProvider extends ServiceProvider
          * Uncomment this function call to load the route files.
          * A web.php file has already been generated.
          */
-        // $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/api.php');
 
         /**
          * Translations
