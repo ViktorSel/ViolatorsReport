@@ -2,12 +2,11 @@
 
 namespace Ast\ViolatorsReport\Services;
 
+use Ast\ViolatorsReport\Http\Controllers\ViolatorsReportController;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Support\Facades\DB;
-use Ast\ViolatorsReport\Controllers\ViolatorsReportController;
 use Modules\Ui\Models\Employees;
-use Ast\ViolatorsReport\Services\Export;
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
 use PhpOffice\PhpSpreadsheet\Style\Border;

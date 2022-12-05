@@ -1,13 +1,13 @@
 <?php
 
-namespace Ast\ViolatorsReport\Controllers;
+namespace Ast\ViolatorsReport\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Ast\ViolatorsReport\Http\Controllers\Controller;
 use Ast\ViolatorsReport\Services\Export;
 use Ast\ViolatorsReport\Services\Response;
 use Ast\ViolatorsReport\Services\ViolatorsReportExport;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 ini_set('memory_limit', -1);
 set_time_limit(10800);

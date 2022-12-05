@@ -1,7 +1,7 @@
 <?php
 
+use Ast\ViolatorsReport\Http\Controllers\ViolatorsReportController;
 use Illuminate\Support\Facades\Route;
-use Ast\ViolatorsReport\Controllers\ViolatorsReportController;
 
 Route::group([
     'prefix' => 'violators-report',
