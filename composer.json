@@ -1,0 +1,47 @@
+{
+  "name": "ast/violators-report",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "minimum-stability": "dev",
+  "description": "",
+  "keywords": ["Laravel"],
+  "authors": [
+    {
+      "name": "Viktor Selednikov",
+      "email": "v.selednikov@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/ast/f-package",
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^8.0",
+    "phpoffice/phpspreadsheet": "^1.16"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "orchestra/testbench": "^6.0",
+    "phpstan/phpstan": "^0.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ast\\ViolatorsReport\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ast\\ViolatorsReport\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ast\\ViolatorsReport\\Providers\\ViolatorsReportServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
+    "analysis": "vendor/bin/phpstan analyse"
+  }
+}
