@@ -83,7 +83,7 @@ class ViolatorsReportServiceProvider extends ServiceProvider
          */
          $this->publishes([
              __DIR__.'/../../resources/export_template' => resource_path('/export_template'),
-         ], 'export_template');
+         ], 'export-template');
 
         /**
          * Migrations

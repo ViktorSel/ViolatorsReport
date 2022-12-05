@@ -42,10 +42,11 @@
   "scripts": {
     "test": "vendor/bin/phpunit -c ./phpunit.xml --colors=always",
     "analysis": "vendor/bin/phpstan analyse",
-    "post-autoload-dump": [
-      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-      "@php artisan package:discover --ansi",
-      "@php artisan vendor:publish --tag=export_template --force"
+    "post-package-install": [
+      "php artisan vendor:publish --tag=export-template --force"
+    ],
+    "post-package-update": [
+      "php artisan vendor:publish --tag=export-template --force"
     ]
   }
 }
